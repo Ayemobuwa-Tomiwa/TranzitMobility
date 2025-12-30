@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "name": "tranzit",
+    "slug": "tranzit",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "tranzit",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.adetomiwaa.tranzit",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
+    },
+    "android": {
+      "package": "com.adetomiwaa.tranzit",
+      "usesCleartextTraffic": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#0000000"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDWMR01s-SEUQTicxFu6E_eTFcJ-shfEb8"
+        }
+      },
+      "runtimeVersion": "1.0.0"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "server",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://tranzit.dev"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "GEOAPIFY_API_KEY": "a84dfc7ec9714f8b83e0970d8bfef2db",
+      "router": {
+        "origin": "https://tranzit.dev"
+      },
+      "eas": {
+        "projectId": "32044320-e6bc-4cc0-9b52-539d60fc53e6"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/32044320-e6bc-4cc0-9b52-539d60fc53e6"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="tranzit_assets">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/tranzit_assets.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
