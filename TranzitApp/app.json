@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "tranzit",
+    "name": "Tranzit",
     "slug": "tranzit",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -53,6 +53,7 @@
       "typedRoutes": true
     },
     "extra": {
+      "EXPO_PUBLIC_API_URL": "http://10.97.66.147:4000",
       "GEOAPIFY_API_KEY": "a84dfc7ec9714f8b83e0970d8bfef2db",
       "router": {
         "origin": "https://tranzit.dev"
@@ -61,8 +62,14 @@
         "projectId": "32044320-e6bc-4cc0-9b52-539d60fc53e6"
       }
     },
+    "eas": {
+      "projectId": "32044320-e6bc-4cc0-9b52-539d60fc53e6"
+    },
     "updates": {
       "url": "https://u.expo.dev/32044320-e6bc-4cc0-9b52-539d60fc53e6"
     }
+  },
+  "updates": {
+    "url": "https://u.expo.dev/32044320-e6bc-4cc0-9b52-539d60fc53e6"
   }
 }

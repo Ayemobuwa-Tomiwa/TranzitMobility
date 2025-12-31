@@ -1,6 +1,7 @@
 import { Clerk } from "@clerk/clerk-expo";
+import Constants from "expo-constants";
 
-const API_URL = process.env.EXPO_PUBLIC_API_URL;
+const API_URL = Constants.expoConfig?.extra?.EXPO_PUBLIC_API_URL;
 
 if (!API_URL) {
   throw new Error("EXPO_PUBLIC_API_URL is not defined");
@@ -16,6 +17,7 @@ export async function api<T>(
 ): Promise<T> {
   const headers = new Headers(options.headers);
 
+  // Attach Clerk token unless explicitly disabled
   if (options.auth !== false) {
     const token = await Clerk.session?.getToken();
     if (token) {

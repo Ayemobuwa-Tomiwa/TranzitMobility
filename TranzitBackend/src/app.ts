@@ -6,15 +6,21 @@ import ridesRouter from "./routes/rides";
 
 const app = express();
 
-app.use(cors());
-app.use(express.json());
-app.use("/ride", ridesRouter);
+app.use(
+    cors({
+        origin: "*",
+        methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        allowedHeaders: ["Content-Type", "Authorization"],
+    })
+);
 
-app.get("/", (_req, res) => {
-    res.send("API running");
+app.use(express.json());
+
+app.get("/health", (_req, res) => {
+    res.json({ status: "ok" });
 });
 
-/* MOUNT ROUTES */
 app.use("/drivers", driversRouter);
+app.use("/ride", ridesRouter);
 
 export default app;
